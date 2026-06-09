@@ -82,10 +82,22 @@ def _add_cycle_split_fields(
         data[total_ratio_key] = None
 
 
-def _clear_cycle_split_fields(data: dict, variant: str) -> None:
-    """Remove split fields when a variant was not computed successfully."""
+def _clear_cycle_split_fields(data: dict, variant: str) -> bool:
+    """Remove auxiliary split fields for a variant."""
+    removed = False
     for template in _CYCLE_SPLIT_FIELD_TEMPLATES:
-        data.pop(template.format(variant=variant), None)
+        key = template.format(variant=variant)
+        if key in data:
+            removed = True
+            data.pop(key, None)
+    return removed
+
+
+def _mark_variant_cycle_data_failed(data: dict, variant: str) -> None:
+    data[f"cycle_count_{variant}"] = None
+    data[f"sparsity_{variant}"] = None
+    data[f"cond_{variant}"] = None
+    _clear_cycle_split_fields(data, variant)
 
 
 def _write_variant_cycle_data(
@@ -447,8 +459,8 @@ def _benchmark_instance_from_path(
     data["std_n"] = std_n
 
     if variant == "both":
-        if std_n > 1:
-            try:
+        try:
+            if std_n > 1:
                 basis = _preprocess_basis(A)
                 count, sparsity, cond, qlsa_cycles, tomography_factor = (
                     _cycle_count_mnes_from_basis(*basis)
@@ -474,32 +486,30 @@ def _benchmark_instance_from_path(
                     qlsa_cycles=qlsa_cycles,
                     tomography_factor=tomography_factor,
                 )
-            except RuntimeError:
-                data["cycle_count_mnes"] = data["sparsity_mnes"] = data["cond_mnes"] = None
-                data["cycle_count_oss"] = data["sparsity_oss"] = data["cond_oss"] = None
-                _clear_cycle_split_fields(data, "mnes")
-                _clear_cycle_split_fields(data, "oss")
-        else:
-            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_mnes(A)
-            _write_variant_cycle_data(
-                data,
-                variant="mnes",
-                cycle_count=count,
-                sparsity=sparsity,
-                cond=cond,
-                qlsa_cycles=qlsa_cycles,
-                tomography_factor=tomography_factor,
-            )
-            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_oss(A)
-            _write_variant_cycle_data(
-                data,
-                variant="oss",
-                cycle_count=count,
-                sparsity=sparsity,
-                cond=cond,
-                qlsa_cycles=qlsa_cycles,
-                tomography_factor=tomography_factor,
-            )
+            else:
+                count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_mnes(A)
+                _write_variant_cycle_data(
+                    data,
+                    variant="mnes",
+                    cycle_count=count,
+                    sparsity=sparsity,
+                    cond=cond,
+                    qlsa_cycles=qlsa_cycles,
+                    tomography_factor=tomography_factor,
+                )
+                count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_oss(A)
+                _write_variant_cycle_data(
+                    data,
+                    variant="oss",
+                    cycle_count=count,
+                    sparsity=sparsity,
+                    cond=cond,
+                    qlsa_cycles=qlsa_cycles,
+                    tomography_factor=tomography_factor,
+                )
+        except RuntimeError:
+            _mark_variant_cycle_data_failed(data, "mnes")
+            _mark_variant_cycle_data_failed(data, "oss")
     elif variant == "mnes":
         try:
             count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_mnes(A)
@@ -513,8 +523,7 @@ def _benchmark_instance_from_path(
                 tomography_factor=tomography_factor,
             )
         except RuntimeError:
-            data["cycle_count_mnes"] = data["sparsity_mnes"] = data["cond_mnes"] = None
-            _clear_cycle_split_fields(data, "mnes")
+            _mark_variant_cycle_data_failed(data, "mnes")
     else:
         try:
             count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_oss(A)
@@ -528,8 +537,7 @@ def _benchmark_instance_from_path(
                 tomography_factor=tomography_factor,
             )
         except RuntimeError:
-            data["cycle_count_oss"] = data["sparsity_oss"] = data["cond_oss"] = None
-            _clear_cycle_split_fields(data, "oss")
+            _mark_variant_cycle_data_failed(data, "oss")
 
     data_path.write_text(json.dumps(data, indent=None))
 
@@ -619,7 +627,8 @@ def show_benchmark_status(
 
     For each instance class, prints one line per active variant showing
     "<class>  [mnes: x/total]  [oss: x/total]".
-    An instance counts as done when all _BENCHMARK_DATA_KEYS for the variant are present.
+    An instance counts as done when all original _BENCHMARK_DATA_KEYS for the
+    variant are present; split fields are auxiliary and are not required.
     """
     root = Path(cache_dir).resolve() if cache_dir is not None else Path("cache_dir").resolve()
     if not root.is_dir():
@@ -661,19 +670,20 @@ def clear_benchmark_data(
     if not root.is_dir():
         raise FileNotFoundError(f"Cache directory not found: {root}")
 
-    keys = (
-        _BENCHMARK_DATA_KEYS["mnes"] + _BENCHMARK_DATA_KEYS["oss"]
-        if variant == "both"
-        else _BENCHMARK_DATA_KEYS[variant]
-    )
+    active_variants = ["mnes", "oss"] if variant == "both" else [variant]
 
     search_roots = [root / name for name in instance_classes] if instance_classes else [root]
     for search_root in search_roots:
         for data_path in search_root.rglob("*.data"):
             data = json.loads(data_path.read_text())
-            if any(k in data for k in keys):
-                for k in keys:
-                    data.pop(k, None)
+            changed = False
+            for active_variant in active_variants:
+                for key in _BENCHMARK_DATA_KEYS[active_variant]:
+                    if key in data:
+                        changed = True
+                        data.pop(key, None)
+                changed = _clear_cycle_split_fields(data, active_variant) or changed
+            if changed:
                 data_path.write_text(json.dumps(data, indent=None))
 
 
