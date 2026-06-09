@@ -1,0 +1,4818 @@
+* Source:     Pyomo MPS Writer
+* Format:     Free MPS
+*
+NAME GasNetwork_GasLib_39_scenario_01
+OBJSENSE
+ MIN
+ROWS
+ N  obj
+ E  c_e_mass_balance(E_NW)_
+ E  c_e_mass_balance(E_SE)_
+ E  c_e_mass_balance(I_EM_1)_
+ E  c_e_mass_balance(I_EM_2)_
+ E  c_e_mass_balance(I_E_1)_
+ E  c_e_mass_balance(I_E_2)_
+ E  c_e_mass_balance(I_E_3)_
+ E  c_e_mass_balance(I_NE_1)_
+ E  c_e_mass_balance(I_NE_2)_
+ E  c_e_mass_balance(I_NE_3)_
+ E  c_e_mass_balance(I_NW_1)_
+ E  c_e_mass_balance(I_NW_2)_
+ E  c_e_mass_balance(I_NW_3)_
+ E  c_e_mass_balance(I_NW_4)_
+ E  c_e_mass_balance(I_N_1)_
+ E  c_e_mass_balance(I_N_2)_
+ E  c_e_mass_balance(I_N_3)_
+ E  c_e_mass_balance(I_SE_1)_
+ E  c_e_mass_balance(I_SE_2)_
+ E  c_e_mass_balance(I_SE_3)_
+ E  c_e_mass_balance(I_SE_4)_
+ E  c_e_mass_balance(I_SE_FE)_
+ E  c_e_mass_balance(I_SW_1)_
+ E  c_e_mass_balance(I_SW_2)_
+ E  c_e_mass_balance(I_SW_3)_
+ E  c_e_mass_balance(I_SW_TE)_
+ E  c_e_mass_balance(I_S_1)_
+ E  c_e_mass_balance(I_S_2)_
+ E  c_e_mass_balance(I_S_3)_
+ E  c_e_mass_balance(I_WM_1)_
+ E  c_e_mass_balance(I_WM_2)_
+ E  c_e_mass_balance(I_W_1)_
+ E  c_e_mass_balance(I_W_2)_
+ E  c_e_mass_balance(I_W_3)_
+ E  c_e_mass_balance(X_E)_
+ E  c_e_mass_balance(X_M)_
+ E  c_e_mass_balance(X_N)_
+ E  c_e_mass_balance(X_NE)_
+ E  c_e_mass_balance(X_SW)_
+ E  c_e_fixed_pressure(E_NW)_
+ G  c_l_compressor_active_flow(CS_NW)_
+ G  c_l_compressor_active_flow(CS_SE)_
+ L  c_u_compressor_active_pressure_lower(CS_NW)_
+ L  c_u_compressor_active_pressure_lower(CS_SE)_
+ L  c_u_compressor_active_pressure_upper(CS_NW)_
+ L  c_u_compressor_active_pressure_upper(CS_SE)_
+ L  c_u_epigraph_upper(P_EM_1)_
+ L  c_u_epigraph_upper(P_EM_2)_
+ L  c_u_epigraph_upper(P_EX)_
+ L  c_u_epigraph_upper(P_E_1)_
+ L  c_u_epigraph_upper(P_E_2)_
+ L  c_u_epigraph_upper(P_E_3)_
+ L  c_u_epigraph_upper(P_E_4)_
+ L  c_u_epigraph_upper(P_NE)_
+ L  c_u_epigraph_upper(P_NW_1)_
+ L  c_u_epigraph_upper(P_NX)_
+ L  c_u_epigraph_upper(P_N_1)_
+ L  c_u_epigraph_upper(P_N_2)_
+ L  c_u_epigraph_upper(P_N_3)_
+ L  c_u_epigraph_upper(P_N_4)_
+ L  c_u_epigraph_upper(P_SE_1)_
+ L  c_u_epigraph_upper(P_SE_2)_
+ L  c_u_epigraph_upper(P_SW_1)_
+ L  c_u_epigraph_upper(P_SW_2)_
+ L  c_u_epigraph_upper(P_S_1)_
+ L  c_u_epigraph_upper(P_S_2)_
+ L  c_u_epigraph_upper(P_S_3)_
+ L  c_u_epigraph_upper(P_S_4)_
+ L  c_u_epigraph_upper(P_WM_1)_
+ L  c_u_epigraph_upper(P_WM_2)_
+ L  c_u_epigraph_upper(P_W_1)_
+ L  c_u_epigraph_upper(P_W_2)_
+ L  c_u_epigraph_upper(P_W_3)_
+ L  c_u_epigraph_upper(P_W_4)_
+ L  c_u_epigraph_lower(P_EM_1)_
+ L  c_u_epigraph_lower(P_EM_2)_
+ L  c_u_epigraph_lower(P_EX)_
+ L  c_u_epigraph_lower(P_E_1)_
+ L  c_u_epigraph_lower(P_E_2)_
+ L  c_u_epigraph_lower(P_E_3)_
+ L  c_u_epigraph_lower(P_E_4)_
+ L  c_u_epigraph_lower(P_NE)_
+ L  c_u_epigraph_lower(P_NW_1)_
+ L  c_u_epigraph_lower(P_NX)_
+ L  c_u_epigraph_lower(P_N_1)_
+ L  c_u_epigraph_lower(P_N_2)_
+ L  c_u_epigraph_lower(P_N_3)_
+ L  c_u_epigraph_lower(P_N_4)_
+ L  c_u_epigraph_lower(P_SE_1)_
+ L  c_u_epigraph_lower(P_SE_2)_
+ L  c_u_epigraph_lower(P_SW_1)_
+ L  c_u_epigraph_lower(P_SW_2)_
+ L  c_u_epigraph_lower(P_S_1)_
+ L  c_u_epigraph_lower(P_S_2)_
+ L  c_u_epigraph_lower(P_S_3)_
+ L  c_u_epigraph_lower(P_S_4)_
+ L  c_u_epigraph_lower(P_WM_1)_
+ L  c_u_epigraph_lower(P_WM_2)_
+ L  c_u_epigraph_lower(P_W_1)_
+ L  c_u_epigraph_lower(P_W_2)_
+ L  c_u_epigraph_lower(P_W_3)_
+ L  c_u_epigraph_lower(P_W_4)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NE_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_E)_
+ E  c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_W)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EX)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_3)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_4)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NE)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NW_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NX)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_3)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_4)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_3)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_4)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_1)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_2)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_3)_
+ E  c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_4)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(flow_bound_0_None_lb)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(flow_bound_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(flow_bound_0_None_lb)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(flow_bound_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(flow_bound_0_None_lb)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(flow_bound_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(flow_bound_0_None_lb)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(flow_bound_0_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_lower_1_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_upper_2_None_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ G  c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(flow_bound_0_None_lb)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(flow_bound_0_None_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_
+ L  c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_
+COLUMNS
+     q_var(E_NW) c_e_mass_balance(E_NW)_ -1
+     phi(CS_NW) c_e_mass_balance(I_NW_2)_ 1
+     phi(CS_NW) c_e_mass_balance(I_NW_4)_ -1
+     phi(CS_NW) c_l_compressor_active_flow(CS_NW)_ 1
+     phi(CS_SE) c_e_mass_balance(I_SE_2)_ 1
+     phi(CS_SE) c_e_mass_balance(I_SE_4)_ -1
+     phi(CS_SE) c_l_compressor_active_flow(CS_SE)_ 1
+     phi(CV_E) c_e_mass_balance(I_EM_1)_ -1
+     phi(CV_E) c_e_mass_balance(I_E_2)_ 1
+     phi(CV_E) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(CV_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(CV_E) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(CV_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(CV_NE_1) c_e_mass_balance(I_NE_1)_ 1
+     phi(CV_NE_1) c_e_mass_balance(I_NE_2)_ -1
+     phi(CV_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(CV_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(CV_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(CV_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(CV_NE_2) c_e_mass_balance(I_NE_2)_ -1
+     phi(CV_NE_2) c_e_mass_balance(I_NE_3)_ 1
+     phi(CV_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(CV_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(CV_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(CV_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(CV_W) c_e_mass_balance(I_WM_1)_ -1
+     phi(CV_W) c_e_mass_balance(I_W_2)_ 1
+     phi(CV_W) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(CV_W) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(CV_W) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(CV_W) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_EM_1) c_e_mass_balance(I_EM_1)_ 1
+     phi(P_EM_1) c_e_mass_balance(I_EM_2)_ -1
+     phi(P_EM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_EM_2) c_e_mass_balance(I_EM_2)_ 1
+     phi(P_EM_2) c_e_mass_balance(X_M)_ -1
+     phi(P_EM_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_EX) c_e_mass_balance(I_SE_1)_ 1
+     phi(P_EX) c_e_mass_balance(X_E)_ -1
+     phi(P_EX) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_EX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_E_1) c_e_mass_balance(I_E_1)_ -1
+     phi(P_E_1) c_e_mass_balance(I_NE_3)_ 1
+     phi(P_E_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_E_2) c_e_mass_balance(I_E_1)_ 1
+     phi(P_E_2) c_e_mass_balance(I_E_2)_ -1
+     phi(P_E_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_E_3) c_e_mass_balance(I_E_2)_ 1
+     phi(P_E_3) c_e_mass_balance(I_E_3)_ -1
+     phi(P_E_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_E_4) c_e_mass_balance(I_E_3)_ 1
+     phi(P_E_4) c_e_mass_balance(I_SE_1)_ -1
+     phi(P_E_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_E_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_NE) c_e_mass_balance(I_NE_2)_ -1
+     phi(P_NE) c_e_mass_balance(X_NE)_ 1
+     phi(P_NE) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_NW_1) c_e_mass_balance(E_NW)_ 1
+     phi(P_NW_1) c_e_mass_balance(I_NW_2)_ -1
+     phi(P_NW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_NX) c_e_mass_balance(I_NW_3)_ 1
+     phi(P_NX) c_e_mass_balance(X_N)_ -1
+     phi(P_NX) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_NX) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_N_1) c_e_mass_balance(I_NW_3)_ 1
+     phi(P_N_1) c_e_mass_balance(I_N_1)_ -1
+     phi(P_N_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_N_2) c_e_mass_balance(I_N_1)_ 1
+     phi(P_N_2) c_e_mass_balance(I_N_2)_ -1
+     phi(P_N_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_N_3) c_e_mass_balance(I_N_2)_ 1
+     phi(P_N_3) c_e_mass_balance(I_N_3)_ -1
+     phi(P_N_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_N_4) c_e_mass_balance(I_NE_1)_ -1
+     phi(P_N_4) c_e_mass_balance(I_N_3)_ 1
+     phi(P_N_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_N_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_SE_1) c_e_mass_balance(E_SE)_ 1
+     phi(P_SE_1) c_e_mass_balance(I_SE_FE)_ -1
+     phi(P_SE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_SE_2) c_e_mass_balance(I_SE_2)_ -1
+     phi(P_SE_2) c_e_mass_balance(I_SE_FE)_ 1
+     phi(P_SE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_SW_1) c_e_mass_balance(I_SW_2)_ 1
+     phi(P_SW_1) c_e_mass_balance(I_SW_TE)_ -1
+     phi(P_SW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_SW_2) c_e_mass_balance(I_SW_TE)_ 1
+     phi(P_SW_2) c_e_mass_balance(X_SW)_ -1
+     phi(P_SW_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.081640796185733555
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.16328159237146711
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.24492238855720069
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.32656318474293422
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 0.40820398092866783
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 0.48984477711440139
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 0.57148557330013494
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 0.65312636948586844
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 0.73476716567160205
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.081640796185733555
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.16328159237146711
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.24492238855720069
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.32656318474293422
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -0.40820398092866783
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -0.48984477711440139
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -0.57148557330013494
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -0.65312636948586844
+     phi(P_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -0.73476716567160205
+     phi(P_S_1) c_e_mass_balance(I_SE_3)_ 1
+     phi(P_S_1) c_e_mass_balance(I_S_1)_ -1
+     phi(P_S_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_S_2) c_e_mass_balance(I_S_1)_ 1
+     phi(P_S_2) c_e_mass_balance(I_S_2)_ -1
+     phi(P_S_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_S_3) c_e_mass_balance(I_S_2)_ 1
+     phi(P_S_3) c_e_mass_balance(I_S_3)_ -1
+     phi(P_S_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_S_4) c_e_mass_balance(I_SW_1)_ -1
+     phi(P_S_4) c_e_mass_balance(I_S_3)_ 1
+     phi(P_S_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_S_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_WM_1) c_e_mass_balance(I_WM_1)_ 1
+     phi(P_WM_1) c_e_mass_balance(I_WM_2)_ -1
+     phi(P_WM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_WM_2) c_e_mass_balance(I_WM_2)_ 1
+     phi(P_WM_2) c_e_mass_balance(X_M)_ -1
+     phi(P_WM_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_W_1) c_e_mass_balance(I_SW_3)_ 1
+     phi(P_W_1) c_e_mass_balance(I_W_1)_ -1
+     phi(P_W_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_W_2) c_e_mass_balance(I_W_1)_ 1
+     phi(P_W_2) c_e_mass_balance(I_W_2)_ -1
+     phi(P_W_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_W_3) c_e_mass_balance(I_W_2)_ 1
+     phi(P_W_3) c_e_mass_balance(I_W_3)_ -1
+     phi(P_W_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(P_W_4) c_e_mass_balance(I_NW_1)_ -1
+     phi(P_W_4) c_e_mass_balance(I_W_3)_ 1
+     phi(P_W_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(flow_bound_0_None_lb)_ 1
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 0.20410199046433397
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 0.40820398092866794
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 0.61230597139300191
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 0.81640796185733588
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1.0205099523216699
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1.2246119427860038
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1.428713933250338
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1.6328159237146718
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1.836917914179006
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(flow_bound_0_None_ub)_ 1
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -0.20410199046433397
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -0.40820398092866794
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -0.61230597139300191
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -0.81640796185733588
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1.0205099523216699
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1.2246119427860038
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1.428713933250338
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1.6328159237146718
+     phi(P_W_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1.836917914179006
+     phi(V_NE_1) c_e_mass_balance(I_NE_1)_ 1
+     phi(V_NE_1) c_e_mass_balance(I_NE_3)_ -1
+     phi(V_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_NW_1) c_e_mass_balance(I_NW_1)_ 1
+     phi(V_NW_1) c_e_mass_balance(I_NW_4)_ -1
+     phi(V_NW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_NW_2) c_e_mass_balance(I_NW_3)_ 1
+     phi(V_NW_2) c_e_mass_balance(I_NW_4)_ -1
+     phi(V_NW_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_SE_1) c_e_mass_balance(I_SE_1)_ 1
+     phi(V_SE_1) c_e_mass_balance(I_SE_4)_ -1
+     phi(V_SE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_SE_2) c_e_mass_balance(I_SE_3)_ 1
+     phi(V_SE_2) c_e_mass_balance(I_SE_4)_ -1
+     phi(V_SE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_SW_1) c_e_mass_balance(I_SW_1)_ 1
+     phi(V_SW_1) c_e_mass_balance(I_SW_2)_ -1
+     phi(V_SW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     phi(V_SW_2) c_e_mass_balance(I_SW_2)_ -1
+     phi(V_SW_2) c_e_mass_balance(I_SW_3)_ 1
+     phi(V_SW_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_lb)_ 1
+     phi(V_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_ub)_ 1
+     psi(E_NW) c_e_fixed_pressure(E_NW)_ 1
+     psi(E_NW) c_u_epigraph_upper(P_NW_1)_ 1
+     psi(E_NW) c_u_epigraph_lower(P_NW_1)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(E_NW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(E_SE) c_u_epigraph_upper(P_SE_1)_ 1
+     psi(E_SE) c_u_epigraph_lower(P_SE_1)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(E_SE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_EM_1) c_u_epigraph_upper(P_EM_1)_ 1
+     psi(I_EM_1) c_u_epigraph_lower(P_EM_1)_ -1
+     psi(I_EM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_EM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_EM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_EM_2) c_u_epigraph_upper(P_EM_1)_ -1
+     psi(I_EM_2) c_u_epigraph_upper(P_EM_2)_ 1
+     psi(I_EM_2) c_u_epigraph_lower(P_EM_1)_ 1
+     psi(I_EM_2) c_u_epigraph_lower(P_EM_2)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_EM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_1) c_u_epigraph_upper(P_E_1)_ -1
+     psi(I_E_1) c_u_epigraph_upper(P_E_2)_ 1
+     psi(I_E_1) c_u_epigraph_lower(P_E_1)_ 1
+     psi(I_E_1) c_u_epigraph_lower(P_E_2)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_2) c_u_epigraph_upper(P_E_2)_ -1
+     psi(I_E_2) c_u_epigraph_upper(P_E_3)_ 1
+     psi(I_E_2) c_u_epigraph_lower(P_E_2)_ 1
+     psi(I_E_2) c_u_epigraph_lower(P_E_3)_ -1
+     psi(I_E_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_E_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_3) c_u_epigraph_upper(P_E_3)_ -1
+     psi(I_E_3) c_u_epigraph_upper(P_E_4)_ 1
+     psi(I_E_3) c_u_epigraph_lower(P_E_3)_ 1
+     psi(I_E_3) c_u_epigraph_lower(P_E_4)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_E_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NE_1) c_u_epigraph_upper(P_N_4)_ -1
+     psi(I_NE_1) c_u_epigraph_lower(P_N_4)_ 1
+     psi(I_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_NE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NE_2) c_u_epigraph_upper(P_NE)_ -1
+     psi(I_NE_2) c_u_epigraph_lower(P_NE)_ 1
+     psi(I_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_NE_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NE_3) c_u_epigraph_upper(P_E_1)_ 1
+     psi(I_NE_3) c_u_epigraph_lower(P_E_1)_ -1
+     psi(I_NE_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_NE_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_NE_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NW_1) c_u_epigraph_upper(P_W_4)_ -1
+     psi(I_NW_1) c_u_epigraph_lower(P_W_4)_ 1
+     psi(I_NW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NW_2) c_u_compressor_active_pressure_lower(CS_NW)_ 1
+     psi(I_NW_2) c_u_compressor_active_pressure_upper(CS_NW)_ -1000
+     psi(I_NW_2) c_u_epigraph_upper(P_NW_1)_ -1
+     psi(I_NW_2) c_u_epigraph_lower(P_NW_1)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NW_3) c_u_epigraph_upper(P_NX)_ 1
+     psi(I_NW_3) c_u_epigraph_upper(P_N_1)_ 1
+     psi(I_NW_3) c_u_epigraph_lower(P_NX)_ -1
+     psi(I_NW_3) c_u_epigraph_lower(P_N_1)_ -1
+     psi(I_NW_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_NW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_NW_4) c_u_compressor_active_pressure_lower(CS_NW)_ -1
+     psi(I_NW_4) c_u_compressor_active_pressure_upper(CS_NW)_ 1
+     psi(I_NW_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_NW_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_NW_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_NW_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_N_1) c_u_epigraph_upper(P_N_1)_ -1
+     psi(I_N_1) c_u_epigraph_upper(P_N_2)_ 1
+     psi(I_N_1) c_u_epigraph_lower(P_N_1)_ 1
+     psi(I_N_1) c_u_epigraph_lower(P_N_2)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_N_2) c_u_epigraph_upper(P_N_2)_ -1
+     psi(I_N_2) c_u_epigraph_upper(P_N_3)_ 1
+     psi(I_N_2) c_u_epigraph_lower(P_N_2)_ 1
+     psi(I_N_2) c_u_epigraph_lower(P_N_3)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_N_3) c_u_epigraph_upper(P_N_3)_ -1
+     psi(I_N_3) c_u_epigraph_upper(P_N_4)_ 1
+     psi(I_N_3) c_u_epigraph_lower(P_N_3)_ 1
+     psi(I_N_3) c_u_epigraph_lower(P_N_4)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_N_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_1) c_u_epigraph_upper(P_EX)_ 1
+     psi(I_SE_1) c_u_epigraph_upper(P_E_4)_ -1
+     psi(I_SE_1) c_u_epigraph_lower(P_EX)_ -1
+     psi(I_SE_1) c_u_epigraph_lower(P_E_4)_ 1
+     psi(I_SE_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_2) c_u_compressor_active_pressure_lower(CS_SE)_ 1
+     psi(I_SE_2) c_u_compressor_active_pressure_upper(CS_SE)_ -1000
+     psi(I_SE_2) c_u_epigraph_upper(P_SE_2)_ -1
+     psi(I_SE_2) c_u_epigraph_lower(P_SE_2)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_3) c_u_epigraph_upper(P_S_1)_ 1
+     psi(I_SE_3) c_u_epigraph_lower(P_S_1)_ -1
+     psi(I_SE_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_4) c_u_compressor_active_pressure_lower(CS_SE)_ -1
+     psi(I_SE_4) c_u_compressor_active_pressure_upper(CS_SE)_ 1
+     psi(I_SE_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_SE_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_SE_4) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_SE_4) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_SE_FE) c_u_epigraph_upper(P_SE_1)_ -1
+     psi(I_SE_FE) c_u_epigraph_upper(P_SE_2)_ 1
+     psi(I_SE_FE) c_u_epigraph_lower(P_SE_1)_ 1
+     psi(I_SE_FE) c_u_epigraph_lower(P_SE_2)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SE_FE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SW_1) c_u_epigraph_upper(P_S_4)_ -1
+     psi(I_SW_1) c_u_epigraph_lower(P_S_4)_ 1
+     psi(I_SW_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SW_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SW_2) c_u_epigraph_upper(P_SW_1)_ 1
+     psi(I_SW_2) c_u_epigraph_lower(P_SW_1)_ -1
+     psi(I_SW_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_SW_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_lb)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SW_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SW_3) c_u_epigraph_upper(P_W_1)_ 1
+     psi(I_SW_3) c_u_epigraph_lower(P_W_1)_ -1
+     psi(I_SW_3) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_lb)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SW_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SW_TE) c_u_epigraph_upper(P_SW_1)_ -1
+     psi(I_SW_TE) c_u_epigraph_upper(P_SW_2)_ 1
+     psi(I_SW_TE) c_u_epigraph_lower(P_SW_1)_ 1
+     psi(I_SW_TE) c_u_epigraph_lower(P_SW_2)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_SW_TE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_1) c_u_epigraph_upper(P_S_1)_ -1
+     psi(I_S_1) c_u_epigraph_upper(P_S_2)_ 1
+     psi(I_S_1) c_u_epigraph_lower(P_S_1)_ 1
+     psi(I_S_1) c_u_epigraph_lower(P_S_2)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_2) c_u_epigraph_upper(P_S_2)_ -1
+     psi(I_S_2) c_u_epigraph_upper(P_S_3)_ 1
+     psi(I_S_2) c_u_epigraph_lower(P_S_2)_ 1
+     psi(I_S_2) c_u_epigraph_lower(P_S_3)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_3) c_u_epigraph_upper(P_S_3)_ -1
+     psi(I_S_3) c_u_epigraph_upper(P_S_4)_ 1
+     psi(I_S_3) c_u_epigraph_lower(P_S_3)_ 1
+     psi(I_S_3) c_u_epigraph_lower(P_S_4)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_S_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_WM_1) c_u_epigraph_upper(P_WM_1)_ 1
+     psi(I_WM_1) c_u_epigraph_lower(P_WM_1)_ -1
+     psi(I_WM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_WM_1) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_WM_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_WM_2) c_u_epigraph_upper(P_WM_1)_ -1
+     psi(I_WM_2) c_u_epigraph_upper(P_WM_2)_ 1
+     psi(I_WM_2) c_u_epigraph_lower(P_WM_1)_ 1
+     psi(I_WM_2) c_u_epigraph_lower(P_WM_2)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_WM_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_1) c_u_epigraph_upper(P_W_1)_ -1
+     psi(I_W_1) c_u_epigraph_upper(P_W_2)_ 1
+     psi(I_W_1) c_u_epigraph_lower(P_W_1)_ 1
+     psi(I_W_1) c_u_epigraph_lower(P_W_2)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_1) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_2) c_u_epigraph_upper(P_W_2)_ -1
+     psi(I_W_2) c_u_epigraph_upper(P_W_3)_ 1
+     psi(I_W_2) c_u_epigraph_lower(P_W_2)_ 1
+     psi(I_W_2) c_u_epigraph_lower(P_W_3)_ -1
+     psi(I_W_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_lower_1_None_lb)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 1
+     psi(I_W_2) c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_2) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_3) c_u_epigraph_upper(P_W_3)_ -1
+     psi(I_W_3) c_u_epigraph_upper(P_W_4)_ 1
+     psi(I_W_3) c_u_epigraph_lower(P_W_3)_ 1
+     psi(I_W_3) c_u_epigraph_lower(P_W_4)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(I_W_3) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_E) c_u_epigraph_upper(P_EX)_ -1
+     psi(X_E) c_u_epigraph_lower(P_EX)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_E) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(X_M) c_u_epigraph_upper(P_EM_2)_ -1
+     psi(X_M) c_u_epigraph_upper(P_WM_2)_ -1
+     psi(X_M) c_u_epigraph_lower(P_EM_2)_ 1
+     psi(X_M) c_u_epigraph_lower(P_WM_2)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_M) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(X_N) c_u_epigraph_upper(P_NX)_ -1
+     psi(X_N) c_u_epigraph_lower(P_NX)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_N) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(X_NE) c_u_epigraph_upper(P_NE)_ 1
+     psi(X_NE) c_u_epigraph_lower(P_NE)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_NE) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_SW) c_u_epigraph_upper(P_SW_2)_ -1
+     psi(X_SW) c_u_epigraph_lower(P_SW_2)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ -1
+     psi(X_SW) c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ -1
+     t(P_EM_1) obj 1
+     t(P_EM_1) c_u_epigraph_upper(P_EM_1)_ -1
+     t(P_EM_1) c_u_epigraph_lower(P_EM_1)_ -1
+     t(P_EM_2) obj 1
+     t(P_EM_2) c_u_epigraph_upper(P_EM_2)_ -1
+     t(P_EM_2) c_u_epigraph_lower(P_EM_2)_ -1
+     t(P_EX) obj 1
+     t(P_EX) c_u_epigraph_upper(P_EX)_ -1
+     t(P_EX) c_u_epigraph_lower(P_EX)_ -1
+     t(P_E_1) obj 1
+     t(P_E_1) c_u_epigraph_upper(P_E_1)_ -1
+     t(P_E_1) c_u_epigraph_lower(P_E_1)_ -1
+     t(P_E_2) obj 1
+     t(P_E_2) c_u_epigraph_upper(P_E_2)_ -1
+     t(P_E_2) c_u_epigraph_lower(P_E_2)_ -1
+     t(P_E_3) obj 1
+     t(P_E_3) c_u_epigraph_upper(P_E_3)_ -1
+     t(P_E_3) c_u_epigraph_lower(P_E_3)_ -1
+     t(P_E_4) obj 1
+     t(P_E_4) c_u_epigraph_upper(P_E_4)_ -1
+     t(P_E_4) c_u_epigraph_lower(P_E_4)_ -1
+     t(P_NE) obj 1
+     t(P_NE) c_u_epigraph_upper(P_NE)_ -1
+     t(P_NE) c_u_epigraph_lower(P_NE)_ -1
+     t(P_NW_1) obj 1
+     t(P_NW_1) c_u_epigraph_upper(P_NW_1)_ -1
+     t(P_NW_1) c_u_epigraph_lower(P_NW_1)_ -1
+     t(P_NX) obj 1
+     t(P_NX) c_u_epigraph_upper(P_NX)_ -1
+     t(P_NX) c_u_epigraph_lower(P_NX)_ -1
+     t(P_N_1) obj 1
+     t(P_N_1) c_u_epigraph_upper(P_N_1)_ -1
+     t(P_N_1) c_u_epigraph_lower(P_N_1)_ -1
+     t(P_N_2) obj 1
+     t(P_N_2) c_u_epigraph_upper(P_N_2)_ -1
+     t(P_N_2) c_u_epigraph_lower(P_N_2)_ -1
+     t(P_N_3) obj 1
+     t(P_N_3) c_u_epigraph_upper(P_N_3)_ -1
+     t(P_N_3) c_u_epigraph_lower(P_N_3)_ -1
+     t(P_N_4) obj 1
+     t(P_N_4) c_u_epigraph_upper(P_N_4)_ -1
+     t(P_N_4) c_u_epigraph_lower(P_N_4)_ -1
+     t(P_SE_1) obj 1
+     t(P_SE_1) c_u_epigraph_upper(P_SE_1)_ -1
+     t(P_SE_1) c_u_epigraph_lower(P_SE_1)_ -1
+     t(P_SE_2) obj 1
+     t(P_SE_2) c_u_epigraph_upper(P_SE_2)_ -1
+     t(P_SE_2) c_u_epigraph_lower(P_SE_2)_ -1
+     t(P_SW_1) obj 1
+     t(P_SW_1) c_u_epigraph_upper(P_SW_1)_ -1
+     t(P_SW_1) c_u_epigraph_lower(P_SW_1)_ -1
+     t(P_SW_2) obj 1
+     t(P_SW_2) c_u_epigraph_upper(P_SW_2)_ -1
+     t(P_SW_2) c_u_epigraph_lower(P_SW_2)_ -1
+     t(P_S_1) obj 1
+     t(P_S_1) c_u_epigraph_upper(P_S_1)_ -1
+     t(P_S_1) c_u_epigraph_lower(P_S_1)_ -1
+     t(P_S_2) obj 1
+     t(P_S_2) c_u_epigraph_upper(P_S_2)_ -1
+     t(P_S_2) c_u_epigraph_lower(P_S_2)_ -1
+     t(P_S_3) obj 1
+     t(P_S_3) c_u_epigraph_upper(P_S_3)_ -1
+     t(P_S_3) c_u_epigraph_lower(P_S_3)_ -1
+     t(P_S_4) obj 1
+     t(P_S_4) c_u_epigraph_upper(P_S_4)_ -1
+     t(P_S_4) c_u_epigraph_lower(P_S_4)_ -1
+     t(P_WM_1) obj 1
+     t(P_WM_1) c_u_epigraph_upper(P_WM_1)_ -1
+     t(P_WM_1) c_u_epigraph_lower(P_WM_1)_ -1
+     t(P_WM_2) obj 1
+     t(P_WM_2) c_u_epigraph_upper(P_WM_2)_ -1
+     t(P_WM_2) c_u_epigraph_lower(P_WM_2)_ -1
+     t(P_W_1) obj 1
+     t(P_W_1) c_u_epigraph_upper(P_W_1)_ -1
+     t(P_W_1) c_u_epigraph_lower(P_W_1)_ -1
+     t(P_W_2) obj 1
+     t(P_W_2) c_u_epigraph_upper(P_W_2)_ -1
+     t(P_W_2) c_u_epigraph_lower(P_W_2)_ -1
+     t(P_W_3) obj 1
+     t(P_W_3) c_u_epigraph_upper(P_W_3)_ -1
+     t(P_W_3) c_u_epigraph_lower(P_W_3)_ -1
+     t(P_W_4) obj 1
+     t(P_W_4) c_u_epigraph_upper(P_W_4)_ -1
+     t(P_W_4) c_u_epigraph_lower(P_W_4)_ -1
+     V_open(V_SE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_1)_ 1
+     V_open(V_SE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_SE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_1)_ 1
+     V_closed(V_SE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_SE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_2)_ 1
+     V_open(V_SE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_SE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_2)_ 1
+     V_closed(V_SE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_NE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NE_1)_ 1
+     V_open(V_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_NE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NE_1)_ 1
+     V_closed(V_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_NW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_1)_ 1
+     V_open(V_NW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_NW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_1)_ 1
+     V_closed(V_NW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_NW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_2)_ 1
+     V_open(V_NW_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_NW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_NW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_2)_ 1
+     V_closed(V_NW_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_NW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_SW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_1)_ 1
+     V_open(V_SW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_SW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_1)_ 1
+     V_closed(V_SW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     V_open(V_SW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_2)_ 1
+     V_open(V_SW_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     V_open(V_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     V_closed(V_SW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_2)_ 1
+     V_closed(V_SW_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     V_closed(V_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     CV_closed(CV_E)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_E)_ 1
+     CV_closed(CV_E)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     CV_closed(CV_E)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     CV_forward(CV_E)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_E)_ 1
+     CV_forward(CV_E)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     CV_forward(CV_E)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     CV_forward(CV_E)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -19200
+     CV_reverse(CV_E)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_E)_ 1
+     CV_reverse(CV_E)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     CV_reverse(CV_E)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     CV_reverse(CV_E)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -23725
+     CV_closed(CV_W)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_W)_ 1
+     CV_closed(CV_W)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     CV_closed(CV_W)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     CV_forward(CV_W)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_W)_ 1
+     CV_forward(CV_W)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     CV_forward(CV_W)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     CV_forward(CV_W)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -19200
+     CV_reverse(CV_W)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_W)_ 1
+     CV_reverse(CV_W)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     CV_reverse(CV_W)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     CV_reverse(CV_W)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -23725
+     CV_closed(CV_NE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_1)_ 1
+     CV_closed(CV_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     CV_closed(CV_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     CV_forward(CV_NE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_1)_ 1
+     CV_forward(CV_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     CV_forward(CV_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     CV_forward(CV_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -19200
+     CV_reverse(CV_NE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_1)_ 1
+     CV_reverse(CV_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     CV_reverse(CV_NE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     CV_reverse(CV_NE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -23725
+     CV_closed(CV_NE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_2)_ 1
+     CV_closed(CV_NE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     CV_closed(CV_NE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     CV_forward(CV_NE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_2)_ 1
+     CV_forward(CV_NE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     CV_forward(CV_NE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     CV_forward(CV_NE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -19200
+     CV_reverse(CV_NE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_2)_ 1
+     CV_reverse(CV_NE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     CV_reverse(CV_NE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     CV_reverse(CV_NE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_upper_2_None_ub)_ -23725
+     Y_plus(P_SW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_1)_ 1
+     Y_plus(P_SW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_SW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_1)_ 1
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_minus(P_SW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_plus(P_SW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_2)_ 1
+     Y_plus(P_SW_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_SW_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_2)_ 1
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 2875
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 3029.2103927952744
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 3165.2783864381636
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 3283.203980928668
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 3382.9871762667867
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 3464.6279724525202
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3528.1263694858685
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3573.4823673668316
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 3600.6959660954094
+     Y_minus(P_SW_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 3609.767165671602
+     Y_plus(P_NW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NW_1)_ 1
+     Y_plus(P_NW_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_NW_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NW_1)_ 1
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1875
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 2029.2103927952744
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 2165.2783864381636
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2283.203980928668
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2382.9871762667867
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2464.6279724525202
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2528.1263694858685
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2573.4823673668316
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2600.6959660954094
+     Y_minus(P_NW_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2609.767165671602
+     Y_plus(P_NE)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NE)_ 1
+     Y_plus(P_NE)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 954.21039279527452
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1090.2783864381638
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1208.2039809286678
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1307.9871762667865
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1389.6279724525202
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1453.1263694858685
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1498.4823673668316
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1525.6959660954094
+     Y_plus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1534.767165671602
+     Y_minus(P_NE)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NE)_ 1
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 954.21039279527452
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1090.2783864381638
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1208.2039809286678
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1307.9871762667865
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1389.6279724525202
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1453.1263694858685
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1498.4823673668316
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 1525.6959660954094
+     Y_minus(P_NE)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 1534.767165671602
+     Y_plus(P_SE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_1)_ 1
+     Y_plus(P_SE_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_SE_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_1)_ 1
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1875
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 2029.2103927952744
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 2165.2783864381636
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2283.203980928668
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2382.9871762667867
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2464.6279724525202
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2528.1263694858685
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2573.4823673668316
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2600.6959660954094
+     Y_minus(P_SE_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2609.767165671602
+     Y_plus(P_SE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_2)_ 1
+     Y_plus(P_SE_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_SE_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_2)_ 1
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_minus(P_SE_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_plus(P_W_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_1)_ 1
+     Y_plus(P_W_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_W_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_1)_ 1
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_W_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_W_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_2)_ 1
+     Y_plus(P_W_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_W_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_2)_ 1
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_W_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_W_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_3)_ 1
+     Y_plus(P_W_3)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_W_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_3)_ 1
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_W_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_W_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_4)_ 1
+     Y_plus(P_W_4)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_W_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_4)_ 1
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_W_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_N_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_1)_ 1
+     Y_plus(P_N_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_N_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_1)_ 1
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_N_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_N_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_2)_ 1
+     Y_plus(P_N_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_N_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_2)_ 1
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_N_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_N_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_3)_ 1
+     Y_plus(P_N_3)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_N_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_3)_ 1
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_N_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_N_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_4)_ 1
+     Y_plus(P_N_4)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_N_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_4)_ 1
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_N_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_E_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_1)_ 1
+     Y_plus(P_E_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_E_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_1)_ 1
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_E_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_E_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_2)_ 1
+     Y_plus(P_E_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_E_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_2)_ 1
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_E_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_E_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_3)_ 1
+     Y_plus(P_E_3)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_E_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_3)_ 1
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_E_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_E_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_4)_ 1
+     Y_plus(P_E_4)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_E_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_4)_ 1
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_E_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_S_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_1)_ 1
+     Y_plus(P_S_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_S_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_1)_ 1
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_S_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_S_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_2)_ 1
+     Y_plus(P_S_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_S_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_2)_ 1
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_S_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_S_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_3)_ 1
+     Y_plus(P_S_3)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_S_3)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_3)_ 1
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_S_3)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_S_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_4)_ 1
+     Y_plus(P_S_4)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_plus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_minus(P_S_4)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_4)_ 1
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4660.5259819881867
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5000.6959660954099
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5295.5099523216695
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5544.9679406669675
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5749.069931131301
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5907.815923714672
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 6021.2059184170794
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 6089.2399152385242
+     Y_minus(P_S_4)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 6111.9179141790064
+     Y_plus(P_WM_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_1)_ 1
+     Y_plus(P_WM_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_plus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_minus(P_WM_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_1)_ 1
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_minus(P_WM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_plus(P_WM_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_2)_ 1
+     Y_plus(P_WM_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_plus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_minus(P_WM_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_2)_ 1
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_minus(P_WM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_plus(P_EM_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_1)_ 1
+     Y_plus(P_EM_1)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_plus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_minus(P_EM_1)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_1)_ 1
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_minus(P_EM_1)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_plus(P_EM_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_2)_ 1
+     Y_plus(P_EM_2)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_plus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_minus(P_EM_2)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_2)_ 1
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1185.5259819881865
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1525.6959660954096
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1820.5099523216697
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2069.967940666967
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2274.069931131301
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2432.8159237146715
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 2546.2059184170794
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2614.2399152385242
+     Y_minus(P_EM_2)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2636.9179141790059
+     Y_plus(P_NX)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NX)_ 1
+     Y_plus(P_NX)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_NX)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NX)_ 1
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_minus(P_NX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_plus(P_EX)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EX)_ 1
+     Y_plus(P_EX)_binary_indicator_var c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_plus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+     Y_minus(P_EX)_binary_indicator_var c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EX)_ 1
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4429.2103927952749
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4565.2783864381636
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4683.203980928668
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4782.9871762667863
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 4864.6279724525202
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 4928.1263694858681
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4973.4823673668316
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5000.6959660954089
+     Y_minus(P_EX)_binary_indicator_var c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5009.767165671602
+RHS
+     RHS c_e_mass_balance(E_NW)_ 0
+     RHS c_e_mass_balance(E_SE)_ 911.6298238829786
+     RHS c_e_mass_balance(I_EM_1)_ 0
+     RHS c_e_mass_balance(I_EM_2)_ 0
+     RHS c_e_mass_balance(I_E_1)_ 0
+     RHS c_e_mass_balance(I_E_2)_ 0
+     RHS c_e_mass_balance(I_E_3)_ 0
+     RHS c_e_mass_balance(I_NE_1)_ 0
+     RHS c_e_mass_balance(I_NE_2)_ 0
+     RHS c_e_mass_balance(I_NE_3)_ 0
+     RHS c_e_mass_balance(I_NW_1)_ 0
+     RHS c_e_mass_balance(I_NW_2)_ 0
+     RHS c_e_mass_balance(I_NW_3)_ 0
+     RHS c_e_mass_balance(I_NW_4)_ 0
+     RHS c_e_mass_balance(I_N_1)_ 0
+     RHS c_e_mass_balance(I_N_2)_ 0
+     RHS c_e_mass_balance(I_N_3)_ 0
+     RHS c_e_mass_balance(I_SE_1)_ 0
+     RHS c_e_mass_balance(I_SE_2)_ 0
+     RHS c_e_mass_balance(I_SE_3)_ 0
+     RHS c_e_mass_balance(I_SE_4)_ 0
+     RHS c_e_mass_balance(I_SE_FE)_ 0
+     RHS c_e_mass_balance(I_SW_1)_ 0
+     RHS c_e_mass_balance(I_SW_2)_ 0
+     RHS c_e_mass_balance(I_SW_3)_ 0
+     RHS c_e_mass_balance(I_SW_TE)_ 0
+     RHS c_e_mass_balance(I_S_1)_ 0
+     RHS c_e_mass_balance(I_S_2)_ 0
+     RHS c_e_mass_balance(I_S_3)_ 0
+     RHS c_e_mass_balance(I_WM_1)_ 0
+     RHS c_e_mass_balance(I_WM_2)_ 0
+     RHS c_e_mass_balance(I_W_1)_ 0
+     RHS c_e_mass_balance(I_W_2)_ 0
+     RHS c_e_mass_balance(I_W_3)_ 0
+     RHS c_e_mass_balance(X_E)_ -928.98421780754938
+     RHS c_e_mass_balance(X_M)_ -138.63564500683401
+     RHS c_e_mass_balance(X_N)_ -310.03007583701572
+     RHS c_e_mass_balance(X_NE)_ -432.86820278846818
+     RHS c_e_mass_balance(X_SW)_ -17.221541949241747
+     RHS c_e_fixed_pressure(E_NW)_ 2125
+     RHS c_l_compressor_active_flow(CS_NW)_ 0
+     RHS c_l_compressor_active_flow(CS_SE)_ 0
+     RHS c_u_compressor_active_pressure_lower(CS_NW)_ 0
+     RHS c_u_compressor_active_pressure_lower(CS_SE)_ 0
+     RHS c_u_compressor_active_pressure_upper(CS_NW)_ 0
+     RHS c_u_compressor_active_pressure_upper(CS_SE)_ 0
+     RHS c_u_epigraph_upper(P_EM_1)_ 0
+     RHS c_u_epigraph_upper(P_EM_2)_ 0
+     RHS c_u_epigraph_upper(P_EX)_ 0
+     RHS c_u_epigraph_upper(P_E_1)_ 0
+     RHS c_u_epigraph_upper(P_E_2)_ 0
+     RHS c_u_epigraph_upper(P_E_3)_ 0
+     RHS c_u_epigraph_upper(P_E_4)_ 0
+     RHS c_u_epigraph_upper(P_NE)_ 0
+     RHS c_u_epigraph_upper(P_NW_1)_ 0
+     RHS c_u_epigraph_upper(P_NX)_ 0
+     RHS c_u_epigraph_upper(P_N_1)_ 0
+     RHS c_u_epigraph_upper(P_N_2)_ 0
+     RHS c_u_epigraph_upper(P_N_3)_ 0
+     RHS c_u_epigraph_upper(P_N_4)_ 0
+     RHS c_u_epigraph_upper(P_SE_1)_ 0
+     RHS c_u_epigraph_upper(P_SE_2)_ 0
+     RHS c_u_epigraph_upper(P_SW_1)_ 0
+     RHS c_u_epigraph_upper(P_SW_2)_ 0
+     RHS c_u_epigraph_upper(P_S_1)_ 0
+     RHS c_u_epigraph_upper(P_S_2)_ 0
+     RHS c_u_epigraph_upper(P_S_3)_ 0
+     RHS c_u_epigraph_upper(P_S_4)_ 0
+     RHS c_u_epigraph_upper(P_WM_1)_ 0
+     RHS c_u_epigraph_upper(P_WM_2)_ 0
+     RHS c_u_epigraph_upper(P_W_1)_ 0
+     RHS c_u_epigraph_upper(P_W_2)_ 0
+     RHS c_u_epigraph_upper(P_W_3)_ 0
+     RHS c_u_epigraph_upper(P_W_4)_ 0
+     RHS c_u_epigraph_lower(P_EM_1)_ 0
+     RHS c_u_epigraph_lower(P_EM_2)_ 0
+     RHS c_u_epigraph_lower(P_EX)_ 0
+     RHS c_u_epigraph_lower(P_E_1)_ 0
+     RHS c_u_epigraph_lower(P_E_2)_ 0
+     RHS c_u_epigraph_lower(P_E_3)_ 0
+     RHS c_u_epigraph_lower(P_E_4)_ 0
+     RHS c_u_epigraph_lower(P_NE)_ 0
+     RHS c_u_epigraph_lower(P_NW_1)_ 0
+     RHS c_u_epigraph_lower(P_NX)_ 0
+     RHS c_u_epigraph_lower(P_N_1)_ 0
+     RHS c_u_epigraph_lower(P_N_2)_ 0
+     RHS c_u_epigraph_lower(P_N_3)_ 0
+     RHS c_u_epigraph_lower(P_N_4)_ 0
+     RHS c_u_epigraph_lower(P_SE_1)_ 0
+     RHS c_u_epigraph_lower(P_SE_2)_ 0
+     RHS c_u_epigraph_lower(P_SW_1)_ 0
+     RHS c_u_epigraph_lower(P_SW_2)_ 0
+     RHS c_u_epigraph_lower(P_S_1)_ 0
+     RHS c_u_epigraph_lower(P_S_2)_ 0
+     RHS c_u_epigraph_lower(P_S_3)_ 0
+     RHS c_u_epigraph_lower(P_S_4)_ 0
+     RHS c_u_epigraph_lower(P_WM_1)_ 0
+     RHS c_u_epigraph_lower(P_WM_2)_ 0
+     RHS c_u_epigraph_lower(P_W_1)_ 0
+     RHS c_u_epigraph_lower(P_W_2)_ 0
+     RHS c_u_epigraph_lower(P_W_3)_ 0
+     RHS c_u_epigraph_lower(P_W_4)_ 0
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NE_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_NW_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SE_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_valve_disjunction_xor(V_SW_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_E)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_NE_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_control_valve_disjunction_xor(CV_W)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EM_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_EX)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_3)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_E_4)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NE)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NW_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_NX)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_3)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_N_4)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SE_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_SW_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_3)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_S_4)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_WM_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_1)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_2)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_3)_ 1
+     RHS c_e__pyomo_gdp_bigm_reformulation_pipe_disjunction_xor(P_W_4)_ 1
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(0)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(1)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(2)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(3)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(4)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(5)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(6)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(7)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(8)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(9)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(10)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(11)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_lb)_ -4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(12)_transformedConstraints(pressure_equality_0_None_ub)_ 4275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(13)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(14)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(15)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(16)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(17)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(18)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(19)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(20)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(21)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(22)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(23)_transformedConstraints(zero_flow_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(24)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_lower_1_None_lb)_ -4800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(25)_transformedConstraints(pressure_drop_upper_2_None_ub)_ 275
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(26)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(27)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(28)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 2875
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 3038.281592371467
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 3201.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 3364.8447771144015
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 3528.1263694858685
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 3691.4079618573355
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3854.6895542288025
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 4017.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4181.252738971737
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(29)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4344.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(30)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1875
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 2038.281592371467
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 2201.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2364.8447771144015
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2528.1263694858685
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2691.4079618573355
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2854.6895542288025
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3017.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 3181.252738971737
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(31)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 3344.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 963.28159237146713
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1126.5631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1289.8447771144013
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1453.1263694858683
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1779.6895542288028
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1942.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2106.252738971737
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(32)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2269.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 963.28159237146713
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1126.5631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 1289.8447771144013
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 1453.1263694858683
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 1779.6895542288028
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 1942.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 2106.252738971737
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(33)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 2269.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(34)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 1875
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 2038.281592371467
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 2201.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2364.8447771144015
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2528.1263694858685
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2691.4079618573355
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 2854.6895542288025
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3017.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 3181.252738971737
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(35)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 3344.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(36)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(37)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(38)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(39)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(40)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(41)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(42)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(43)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(44)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(45)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(46)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(47)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(48)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(49)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(50)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(51)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(52)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(53)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(54)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(55)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(56)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(57)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(58)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(59)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(60)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(61)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(62)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(63)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(64)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(65)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(66)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(67)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(68)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4683.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 5499.6119427860031
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 5907.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 6316.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 6724.2238855720079
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 7132.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 7540.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(69)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 7948.8358283580128
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(70)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(71)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(72)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(73)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(74)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(75)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(76)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 800
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 1208.203980928668
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 1616.4079618573357
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 2024.6119427860037
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 2432.815923714672
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 2841.0199046433399
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 3249.2238855720075
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 3657.4278665006759
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 4065.631847429343
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(77)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 4473.8358283580119
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(78)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(79)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_l__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(flow_bound_0_None_lb)_ -2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(80)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(flow_bound_0_None_ub)_ 2000
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(0)_1__0_ub)_ 4275
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(1)_2__1_ub)_ 4438.2815923714679
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(2)_3__2_ub)_ 4601.563184742934
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(3)_4__3_ub)_ 4764.8447771144019
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(4)_5__4_ub)_ 4928.1263694858681
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(5)_6__5_ub)_ 5091.407961857336
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(6)_7__6_ub)_ 5254.6895542288021
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(7)_8__7_ub)_ 5417.97114660027
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(8)_9__8_ub)_ 5581.2527389717361
+     RHS c_u__pyomo_gdp_bigm_reformulation_relaxedDisjuncts(81)_transformedConstraints(_weymouth_oa(9)_10__9_ub)_ 5744.534331343204
+BOUNDS
+ LO BOUND q_var(E_NW) 0
+ UP BOUND q_var(E_NW) 1000
+ LO BOUND phi(CS_NW) -2000
+ UP BOUND phi(CS_NW) 2000
+ LO BOUND phi(CS_SE) -2000
+ UP BOUND phi(CS_SE) 2000
+ LO BOUND phi(CV_E) -2000
+ UP BOUND phi(CV_E) 2000
+ LO BOUND phi(CV_NE_1) -2000
+ UP BOUND phi(CV_NE_1) 2000
+ LO BOUND phi(CV_NE_2) -2000
+ UP BOUND phi(CV_NE_2) 2000
+ LO BOUND phi(CV_W) -2000
+ UP BOUND phi(CV_W) 2000
+ LO BOUND phi(P_EM_1) -2000
+ UP BOUND phi(P_EM_1) 2000
+ LO BOUND phi(P_EM_2) -2000
+ UP BOUND phi(P_EM_2) 2000
+ LO BOUND phi(P_EX) -2000
+ UP BOUND phi(P_EX) 2000
+ LO BOUND phi(P_E_1) -2000
+ UP BOUND phi(P_E_1) 2000
+ LO BOUND phi(P_E_2) -2000
+ UP BOUND phi(P_E_2) 2000
+ LO BOUND phi(P_E_3) -2000
+ UP BOUND phi(P_E_3) 2000
+ LO BOUND phi(P_E_4) -2000
+ UP BOUND phi(P_E_4) 2000
+ LO BOUND phi(P_NE) -2000
+ UP BOUND phi(P_NE) 2000
+ LO BOUND phi(P_NW_1) -2000
+ UP BOUND phi(P_NW_1) 2000
+ LO BOUND phi(P_NX) -2000
+ UP BOUND phi(P_NX) 2000
+ LO BOUND phi(P_N_1) -2000
+ UP BOUND phi(P_N_1) 2000
+ LO BOUND phi(P_N_2) -2000
+ UP BOUND phi(P_N_2) 2000
+ LO BOUND phi(P_N_3) -2000
+ UP BOUND phi(P_N_3) 2000
+ LO BOUND phi(P_N_4) -2000
+ UP BOUND phi(P_N_4) 2000
+ LO BOUND phi(P_SE_1) -2000
+ UP BOUND phi(P_SE_1) 2000
+ LO BOUND phi(P_SE_2) -2000
+ UP BOUND phi(P_SE_2) 2000
+ LO BOUND phi(P_SW_1) -2000
+ UP BOUND phi(P_SW_1) 2000
+ LO BOUND phi(P_SW_2) -2000
+ UP BOUND phi(P_SW_2) 2000
+ LO BOUND phi(P_S_1) -2000
+ UP BOUND phi(P_S_1) 2000
+ LO BOUND phi(P_S_2) -2000
+ UP BOUND phi(P_S_2) 2000
+ LO BOUND phi(P_S_3) -2000
+ UP BOUND phi(P_S_3) 2000
+ LO BOUND phi(P_S_4) -2000
+ UP BOUND phi(P_S_4) 2000
+ LO BOUND phi(P_WM_1) -2000
+ UP BOUND phi(P_WM_1) 2000
+ LO BOUND phi(P_WM_2) -2000
+ UP BOUND phi(P_WM_2) 2000
+ LO BOUND phi(P_W_1) -2000
+ UP BOUND phi(P_W_1) 2000
+ LO BOUND phi(P_W_2) -2000
+ UP BOUND phi(P_W_2) 2000
+ LO BOUND phi(P_W_3) -2000
+ UP BOUND phi(P_W_3) 2000
+ LO BOUND phi(P_W_4) -2000
+ UP BOUND phi(P_W_4) 2000
+ LO BOUND phi(V_NE_1) -2000
+ UP BOUND phi(V_NE_1) 2000
+ LO BOUND phi(V_NW_1) -2000
+ UP BOUND phi(V_NW_1) 2000
+ LO BOUND phi(V_NW_2) -2000
+ UP BOUND phi(V_NW_2) 2000
+ LO BOUND phi(V_SE_1) -2000
+ UP BOUND phi(V_SE_1) 2000
+ LO BOUND phi(V_SE_2) -2000
+ UP BOUND phi(V_SE_2) 2000
+ LO BOUND phi(V_SW_1) -2000
+ UP BOUND phi(V_SW_1) 2000
+ LO BOUND phi(V_SW_2) -2000
+ UP BOUND phi(V_SW_2) 2000
+ LO BOUND psi(E_NW) 625
+ UP BOUND psi(E_NW) 2500
+ LO BOUND psi(E_SE) 625
+ UP BOUND psi(E_SE) 2500
+ LO BOUND psi(I_EM_1) 100
+ UP BOUND psi(I_EM_1) 900
+ LO BOUND psi(I_EM_2) 100
+ UP BOUND psi(I_EM_2) 900
+ LO BOUND psi(I_E_1) 625
+ UP BOUND psi(I_E_1) 4900
+ LO BOUND psi(I_E_2) 625
+ UP BOUND psi(I_E_2) 4900
+ LO BOUND psi(I_E_3) 625
+ UP BOUND psi(I_E_3) 4900
+ LO BOUND psi(I_NE_1) 625
+ UP BOUND psi(I_NE_1) 4900
+ LO BOUND psi(I_NE_2) 100
+ UP BOUND psi(I_NE_2) 900
+ LO BOUND psi(I_NE_3) 625
+ UP BOUND psi(I_NE_3) 4900
+ LO BOUND psi(I_NW_1) 625
+ UP BOUND psi(I_NW_1) 4900
+ LO BOUND psi(I_NW_2) 625
+ UP BOUND psi(I_NW_2) 4900
+ LO BOUND psi(I_NW_3) 625
+ UP BOUND psi(I_NW_3) 4900
+ LO BOUND psi(I_NW_4) 625
+ UP BOUND psi(I_NW_4) 4900
+ LO BOUND psi(I_N_1) 625
+ UP BOUND psi(I_N_1) 4900
+ LO BOUND psi(I_N_2) 625
+ UP BOUND psi(I_N_2) 4900
+ LO BOUND psi(I_N_3) 625
+ UP BOUND psi(I_N_3) 4900
+ LO BOUND psi(I_SE_1) 625
+ UP BOUND psi(I_SE_1) 4900
+ LO BOUND psi(I_SE_2) 625
+ UP BOUND psi(I_SE_2) 4900
+ LO BOUND psi(I_SE_3) 625
+ UP BOUND psi(I_SE_3) 4900
+ LO BOUND psi(I_SE_4) 625
+ UP BOUND psi(I_SE_4) 4900
+ LO BOUND psi(I_SE_FE) 625
+ UP BOUND psi(I_SE_FE) 4900
+ LO BOUND psi(I_SW_1) 625
+ UP BOUND psi(I_SW_1) 4900
+ LO BOUND psi(I_SW_2) 625
+ UP BOUND psi(I_SW_2) 4900
+ LO BOUND psi(I_SW_3) 625
+ UP BOUND psi(I_SW_3) 4900
+ LO BOUND psi(I_SW_TE) 625
+ UP BOUND psi(I_SW_TE) 4900
+ LO BOUND psi(I_S_1) 625
+ UP BOUND psi(I_S_1) 4900
+ LO BOUND psi(I_S_2) 625
+ UP BOUND psi(I_S_2) 4900
+ LO BOUND psi(I_S_3) 625
+ UP BOUND psi(I_S_3) 4900
+ LO BOUND psi(I_WM_1) 100
+ UP BOUND psi(I_WM_1) 900
+ LO BOUND psi(I_WM_2) 100
+ UP BOUND psi(I_WM_2) 900
+ LO BOUND psi(I_W_1) 625
+ UP BOUND psi(I_W_1) 4900
+ LO BOUND psi(I_W_2) 625
+ UP BOUND psi(I_W_2) 4900
+ LO BOUND psi(I_W_3) 625
+ UP BOUND psi(I_W_3) 4900
+ LO BOUND psi(X_E) 625
+ UP BOUND psi(X_E) 4900
+ LO BOUND psi(X_M) 100
+ UP BOUND psi(X_M) 900
+ LO BOUND psi(X_N) 625
+ UP BOUND psi(X_N) 4900
+ LO BOUND psi(X_NE) 100
+ UP BOUND psi(X_NE) 900
+ LO BOUND psi(X_SW) 2025
+ UP BOUND psi(X_SW) 4900
+ LO BOUND t(P_EM_1) 0
+ LO BOUND t(P_EM_2) 0
+ LO BOUND t(P_EX) 0
+ LO BOUND t(P_E_1) 0
+ LO BOUND t(P_E_2) 0
+ LO BOUND t(P_E_3) 0
+ LO BOUND t(P_E_4) 0
+ LO BOUND t(P_NE) 0
+ LO BOUND t(P_NW_1) 0
+ LO BOUND t(P_NX) 0
+ LO BOUND t(P_N_1) 0
+ LO BOUND t(P_N_2) 0
+ LO BOUND t(P_N_3) 0
+ LO BOUND t(P_N_4) 0
+ LO BOUND t(P_SE_1) 0
+ LO BOUND t(P_SE_2) 0
+ LO BOUND t(P_SW_1) 0
+ LO BOUND t(P_SW_2) 0
+ LO BOUND t(P_S_1) 0
+ LO BOUND t(P_S_2) 0
+ LO BOUND t(P_S_3) 0
+ LO BOUND t(P_S_4) 0
+ LO BOUND t(P_WM_1) 0
+ LO BOUND t(P_WM_2) 0
+ LO BOUND t(P_W_1) 0
+ LO BOUND t(P_W_2) 0
+ LO BOUND t(P_W_3) 0
+ LO BOUND t(P_W_4) 0
+ LO BOUND V_open(V_SE_1)_binary_indicator_var 0
+ UP BOUND V_open(V_SE_1)_binary_indicator_var 1
+ LO BOUND V_closed(V_SE_1)_binary_indicator_var 0
+ UP BOUND V_closed(V_SE_1)_binary_indicator_var 1
+ LO BOUND V_open(V_SE_2)_binary_indicator_var 0
+ UP BOUND V_open(V_SE_2)_binary_indicator_var 1
+ LO BOUND V_closed(V_SE_2)_binary_indicator_var 0
+ UP BOUND V_closed(V_SE_2)_binary_indicator_var 1
+ LO BOUND V_open(V_NE_1)_binary_indicator_var 0
+ UP BOUND V_open(V_NE_1)_binary_indicator_var 1
+ LO BOUND V_closed(V_NE_1)_binary_indicator_var 0
+ UP BOUND V_closed(V_NE_1)_binary_indicator_var 1
+ LO BOUND V_open(V_NW_1)_binary_indicator_var 0
+ UP BOUND V_open(V_NW_1)_binary_indicator_var 1
+ LO BOUND V_closed(V_NW_1)_binary_indicator_var 0
+ UP BOUND V_closed(V_NW_1)_binary_indicator_var 1
+ LO BOUND V_open(V_NW_2)_binary_indicator_var 0
+ UP BOUND V_open(V_NW_2)_binary_indicator_var 1
+ LO BOUND V_closed(V_NW_2)_binary_indicator_var 0
+ UP BOUND V_closed(V_NW_2)_binary_indicator_var 1
+ LO BOUND V_open(V_SW_1)_binary_indicator_var 0
+ UP BOUND V_open(V_SW_1)_binary_indicator_var 1
+ LO BOUND V_closed(V_SW_1)_binary_indicator_var 0
+ UP BOUND V_closed(V_SW_1)_binary_indicator_var 1
+ LO BOUND V_open(V_SW_2)_binary_indicator_var 0
+ UP BOUND V_open(V_SW_2)_binary_indicator_var 1
+ LO BOUND V_closed(V_SW_2)_binary_indicator_var 0
+ UP BOUND V_closed(V_SW_2)_binary_indicator_var 1
+ LO BOUND CV_closed(CV_E)_binary_indicator_var 0
+ UP BOUND CV_closed(CV_E)_binary_indicator_var 1
+ LO BOUND CV_forward(CV_E)_binary_indicator_var 0
+ UP BOUND CV_forward(CV_E)_binary_indicator_var 1
+ LO BOUND CV_reverse(CV_E)_binary_indicator_var 0
+ UP BOUND CV_reverse(CV_E)_binary_indicator_var 1
+ LO BOUND CV_closed(CV_W)_binary_indicator_var 0
+ UP BOUND CV_closed(CV_W)_binary_indicator_var 1
+ LO BOUND CV_forward(CV_W)_binary_indicator_var 0
+ UP BOUND CV_forward(CV_W)_binary_indicator_var 1
+ LO BOUND CV_reverse(CV_W)_binary_indicator_var 0
+ UP BOUND CV_reverse(CV_W)_binary_indicator_var 1
+ LO BOUND CV_closed(CV_NE_1)_binary_indicator_var 0
+ UP BOUND CV_closed(CV_NE_1)_binary_indicator_var 1
+ LO BOUND CV_forward(CV_NE_1)_binary_indicator_var 0
+ UP BOUND CV_forward(CV_NE_1)_binary_indicator_var 1
+ LO BOUND CV_reverse(CV_NE_1)_binary_indicator_var 0
+ UP BOUND CV_reverse(CV_NE_1)_binary_indicator_var 1
+ LO BOUND CV_closed(CV_NE_2)_binary_indicator_var 0
+ UP BOUND CV_closed(CV_NE_2)_binary_indicator_var 1
+ LO BOUND CV_forward(CV_NE_2)_binary_indicator_var 0
+ UP BOUND CV_forward(CV_NE_2)_binary_indicator_var 1
+ LO BOUND CV_reverse(CV_NE_2)_binary_indicator_var 0
+ UP BOUND CV_reverse(CV_NE_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_SW_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_SW_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_SW_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_SW_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_SW_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_SW_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_SW_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_SW_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_NW_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_NW_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_NW_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_NW_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_NE)_binary_indicator_var 0
+ UP BOUND Y_plus(P_NE)_binary_indicator_var 1
+ LO BOUND Y_minus(P_NE)_binary_indicator_var 0
+ UP BOUND Y_minus(P_NE)_binary_indicator_var 1
+ LO BOUND Y_plus(P_SE_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_SE_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_SE_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_SE_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_SE_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_SE_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_SE_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_SE_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_W_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_W_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_W_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_W_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_W_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_W_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_W_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_W_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_W_3)_binary_indicator_var 0
+ UP BOUND Y_plus(P_W_3)_binary_indicator_var 1
+ LO BOUND Y_minus(P_W_3)_binary_indicator_var 0
+ UP BOUND Y_minus(P_W_3)_binary_indicator_var 1
+ LO BOUND Y_plus(P_W_4)_binary_indicator_var 0
+ UP BOUND Y_plus(P_W_4)_binary_indicator_var 1
+ LO BOUND Y_minus(P_W_4)_binary_indicator_var 0
+ UP BOUND Y_minus(P_W_4)_binary_indicator_var 1
+ LO BOUND Y_plus(P_N_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_N_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_N_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_N_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_N_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_N_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_N_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_N_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_N_3)_binary_indicator_var 0
+ UP BOUND Y_plus(P_N_3)_binary_indicator_var 1
+ LO BOUND Y_minus(P_N_3)_binary_indicator_var 0
+ UP BOUND Y_minus(P_N_3)_binary_indicator_var 1
+ LO BOUND Y_plus(P_N_4)_binary_indicator_var 0
+ UP BOUND Y_plus(P_N_4)_binary_indicator_var 1
+ LO BOUND Y_minus(P_N_4)_binary_indicator_var 0
+ UP BOUND Y_minus(P_N_4)_binary_indicator_var 1
+ LO BOUND Y_plus(P_E_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_E_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_E_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_E_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_E_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_E_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_E_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_E_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_E_3)_binary_indicator_var 0
+ UP BOUND Y_plus(P_E_3)_binary_indicator_var 1
+ LO BOUND Y_minus(P_E_3)_binary_indicator_var 0
+ UP BOUND Y_minus(P_E_3)_binary_indicator_var 1
+ LO BOUND Y_plus(P_E_4)_binary_indicator_var 0
+ UP BOUND Y_plus(P_E_4)_binary_indicator_var 1
+ LO BOUND Y_minus(P_E_4)_binary_indicator_var 0
+ UP BOUND Y_minus(P_E_4)_binary_indicator_var 1
+ LO BOUND Y_plus(P_S_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_S_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_S_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_S_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_S_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_S_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_S_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_S_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_S_3)_binary_indicator_var 0
+ UP BOUND Y_plus(P_S_3)_binary_indicator_var 1
+ LO BOUND Y_minus(P_S_3)_binary_indicator_var 0
+ UP BOUND Y_minus(P_S_3)_binary_indicator_var 1
+ LO BOUND Y_plus(P_S_4)_binary_indicator_var 0
+ UP BOUND Y_plus(P_S_4)_binary_indicator_var 1
+ LO BOUND Y_minus(P_S_4)_binary_indicator_var 0
+ UP BOUND Y_minus(P_S_4)_binary_indicator_var 1
+ LO BOUND Y_plus(P_WM_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_WM_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_WM_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_WM_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_WM_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_WM_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_WM_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_WM_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_EM_1)_binary_indicator_var 0
+ UP BOUND Y_plus(P_EM_1)_binary_indicator_var 1
+ LO BOUND Y_minus(P_EM_1)_binary_indicator_var 0
+ UP BOUND Y_minus(P_EM_1)_binary_indicator_var 1
+ LO BOUND Y_plus(P_EM_2)_binary_indicator_var 0
+ UP BOUND Y_plus(P_EM_2)_binary_indicator_var 1
+ LO BOUND Y_minus(P_EM_2)_binary_indicator_var 0
+ UP BOUND Y_minus(P_EM_2)_binary_indicator_var 1
+ LO BOUND Y_plus(P_NX)_binary_indicator_var 0
+ UP BOUND Y_plus(P_NX)_binary_indicator_var 1
+ LO BOUND Y_minus(P_NX)_binary_indicator_var 0
+ UP BOUND Y_minus(P_NX)_binary_indicator_var 1
+ LO BOUND Y_plus(P_EX)_binary_indicator_var 0
+ UP BOUND Y_plus(P_EX)_binary_indicator_var 1
+ LO BOUND Y_minus(P_EX)_binary_indicator_var 0
+ UP BOUND Y_minus(P_EX)_binary_indicator_var 1
+ENDATA
