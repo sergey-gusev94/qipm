@@ -5,6 +5,6 @@ cd "$(dirname "$0")"
 
 mkdir -p logs
 
-python transform.py gaslib 2>&1 | tee logs/02_transform_gaslib.log
-python solve.py --format both gaslib 2>&1 | tee logs/03_solve_gaslib.log
-python benchmark.py --variant both gaslib 2>&1 | tee logs/04_benchmark_gaslib.log
+python transform.py 2>&1 | tee logs/02_transform_all.log
+python solve.py --format both 2>&1 | tee logs/03_solve_all.log
+python benchmark.py --variant both 2>&1 | tee logs/04_benchmark_all.log
