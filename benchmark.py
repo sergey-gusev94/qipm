@@ -19,6 +19,95 @@ _MNES_SM_TIMEOUT = 60     # seconds; wall-clock limit for svds("SM") in MNES
 _MNES_N_PROBES = 10_000   # random right-probes for σ_min upper bound fallback
 _OSS_SM_TIMEOUT = 60      # seconds; wall-clock limit for svds("SM") in OSS
 _OSS_N_PROBES = 10_000    # random right-probes for σ_min upper bound fallback
+_CYCLE_DURATION_800PS_SECONDS = 800e-12
+
+_CYCLE_SPLIT_FIELD_TEMPLATES = (
+    "qlsa_cycles_{variant}",
+    "tomography_factor_{variant}",
+    "cycle_count_{variant}_recomputed_from_split",
+    "tomography_repetition_cycles_{variant}",
+    "qlsa_fraction_of_total_{variant}",
+    "tomography_repetition_fraction_of_total_{variant}",
+    "qlsa_time_800ps_{variant}_seconds",
+    "total_time_800ps_{variant}_seconds",
+    "qlsa_time_800ps_over_highs_std_{variant}",
+    "total_time_800ps_over_highs_std_{variant}",
+)
+
+
+def _add_cycle_split_fields(
+    data: dict,
+    *,
+    variant: str,
+    qlsa_cycles: int,
+    tomography_factor: float,
+    cycle_count: int,
+) -> None:
+    """Write split fields for totals made from repeated QLSA preparations."""
+    recomputed_cycle_count = int(qlsa_cycles * tomography_factor)
+    tomography_repetition_cycles = cycle_count - qlsa_cycles
+    qlsa_time_seconds = qlsa_cycles * _CYCLE_DURATION_800PS_SECONDS
+    total_time_seconds = cycle_count * _CYCLE_DURATION_800PS_SECONDS
+
+    data[f"qlsa_cycles_{variant}"] = qlsa_cycles
+    data[f"tomography_factor_{variant}"] = tomography_factor
+    data[f"cycle_count_{variant}_recomputed_from_split"] = recomputed_cycle_count
+    data[f"tomography_repetition_cycles_{variant}"] = tomography_repetition_cycles
+    data[f"qlsa_fraction_of_total_{variant}"] = (
+        qlsa_cycles / cycle_count if cycle_count else None
+    )
+    data[f"tomography_repetition_fraction_of_total_{variant}"] = (
+        tomography_repetition_cycles / cycle_count if cycle_count else None
+    )
+    data[f"qlsa_time_800ps_{variant}_seconds"] = qlsa_time_seconds
+    data[f"total_time_800ps_{variant}_seconds"] = total_time_seconds
+
+    qlsa_ratio_key = f"qlsa_time_800ps_over_highs_std_{variant}"
+    total_ratio_key = f"total_time_800ps_over_highs_std_{variant}"
+    if "runtime_highs_std" not in data:
+        data.pop(qlsa_ratio_key, None)
+        data.pop(total_ratio_key, None)
+        return
+
+    runtime_highs_std = data["runtime_highs_std"]
+    if (
+        isinstance(runtime_highs_std, (int, float))
+        and runtime_highs_std > 0
+        and math.isfinite(runtime_highs_std)
+    ):
+        data[qlsa_ratio_key] = qlsa_time_seconds / runtime_highs_std
+        data[total_ratio_key] = total_time_seconds / runtime_highs_std
+    else:
+        data[qlsa_ratio_key] = None
+        data[total_ratio_key] = None
+
+
+def _clear_cycle_split_fields(data: dict, variant: str) -> None:
+    """Remove split fields when a variant was not computed successfully."""
+    for template in _CYCLE_SPLIT_FIELD_TEMPLATES:
+        data.pop(template.format(variant=variant), None)
+
+
+def _write_variant_cycle_data(
+    data: dict,
+    *,
+    variant: str,
+    cycle_count: int,
+    sparsity: int,
+    cond: float,
+    qlsa_cycles: int,
+    tomography_factor: float,
+) -> None:
+    data[f"cycle_count_{variant}"] = cycle_count
+    data[f"sparsity_{variant}"] = sparsity
+    data[f"cond_{variant}"] = None if not math.isfinite(cond) else cond
+    _add_cycle_split_fields(
+        data,
+        variant=variant,
+        qlsa_cycles=qlsa_cycles,
+        tomography_factor=tomography_factor,
+        cycle_count=cycle_count,
+    )
 
 
 def cycle_count_qlsa(
@@ -169,8 +258,8 @@ def _cycle_count_mnes_from_basis(
     n_N: int,
     A_B_lu,
     A_N: csr_matrix,
-) -> tuple[int, int, float]:
-    """Compute (cycle_count, sparsity, cond) for mnes from preprocessed basis.
+) -> tuple[int, int, float, int, float]:
+    """Compute (cycle_count, sparsity, cond, qlsa_cycles, tomography_factor) for mnes.
 
     Uses M̂ = I + F̄F̄ᵀ, so λᵢ(M̂) = 1 + σᵢ(F̄)². Computes σ_max and σ_min of
     F̄ = A_B⁻¹ A_N via svds on a LinearOperator; κ = (1+σ_max²)/(1+σ_min²).
@@ -216,12 +305,14 @@ def _cycle_count_mnes_from_basis(
 
         k = lam_max / lam_min
 
-    count = int(cycle_count_qlsa(s=s, k=k, epsilon=_EPSILON) * (m - 1) / _EPSILON**2)
-    return count, s, k
+    qlsa_cycles = cycle_count_qlsa(s=s, k=k, epsilon=_EPSILON)
+    tomography_factor = (m - 1) / _EPSILON**2
+    cycle_count = int(qlsa_cycles * tomography_factor)
+    return cycle_count, s, k, qlsa_cycles, tomography_factor
 
 
-def _cycle_count_mnes(A: csr_matrix) -> tuple[int, int, float]:
-    """Return (cycle_count, sparsity, cond) for mnes.
+def _cycle_count_mnes(A: csr_matrix) -> tuple[int, int, float, int, float]:
+    """Return (cycle_count, sparsity, cond, qlsa_cycles, tomography_factor) for mnes.
 
     Computes κ(M̂) via M̂ = I + F̄F̄ᵀ, F̄ = A_B⁻¹ A_N (D_B = D_N = I); s = m.
     Uses svds on F̄: κ = (1+σ_max²)/(1+σ_min²); λ_min = 1 exactly when n_N < m.
@@ -238,8 +329,8 @@ def _cycle_count_oss_from_basis(
     n_N: int,
     A_B_lu,
     A_N: csr_matrix,
-) -> tuple[int, int, float]:
-    """Compute (cycle_count, sparsity, cond) for oss from preprocessed basis.
+) -> tuple[int, int, float, int, float]:
+    """Compute (cycle_count, sparsity, cond, qlsa_cycles, tomography_factor) for oss.
 
     Computes κ(M) = σ_max(M) / σ_min(M) for M = [-Aᵀ | V] ∈ ℝⁿˣⁿ (x = s = 1).
     V ∈ ℝⁿˣ⁽ⁿ⁻ᵐ⁾ is the null-space basis built from the SPQR pivot basis B:
@@ -293,12 +384,14 @@ def _cycle_count_oss_from_basis(
     if sigma_min is None:
         sigma_min = _sigma_min_random_probes(M_op.matvec, n, _OSS_N_PROBES)
     k = sigma_max / sigma_min
-    count = int(cycle_count_qlsa(s=s, k=k, epsilon=_EPSILON) * (2 * n - 1) / _EPSILON**2)
-    return count, s, k
+    qlsa_cycles = cycle_count_qlsa(s=s, k=k, epsilon=_EPSILON)
+    tomography_factor = (2 * n - 1) / _EPSILON**2
+    cycle_count = int(qlsa_cycles * tomography_factor)
+    return cycle_count, s, k, qlsa_cycles, tomography_factor
 
 
-def _cycle_count_oss(A: csr_matrix) -> tuple[int, int, float]:
-    """Return (cycle_count, sparsity, cond) for oss.
+def _cycle_count_oss(A: csr_matrix) -> tuple[int, int, float, int, float]:
+    """Return (cycle_count, sparsity, cond, qlsa_cycles, tomography_factor) for oss.
 
     Computes κ(M) = σ_max/σ_min for M = [-Aᵀ | V] ∈ ℝⁿˣⁿ (x = s = 1).
     Uses svds on M_op with timeout + random probe fallback; result is a lower bound.
@@ -308,7 +401,10 @@ def _cycle_count_oss(A: csr_matrix) -> tuple[int, int, float]:
     m, n = A.shape
 
     if n <= 1:
-        return 0, 1, 1.0
+        qlsa_cycles = 0
+        tomography_factor = 0.0
+        cycle_count = int(qlsa_cycles * tomography_factor)
+        return cycle_count, 1, 1.0, qlsa_cycles, tomography_factor
 
     return _cycle_count_oss_from_basis(*_preprocess_basis(A))
 
@@ -339,54 +435,101 @@ def _benchmark_instance_from_path(
 
     base_name = path.name[: -len(".std")]
     A = _load_standard_form(path)
+    std_m, std_n = A.shape
 
-    if A.shape[0] > 100_000:
+    if std_m > 100_000:
         return
 
     data_path = path.parent / (base_name + ".data")
     data = json.loads(data_path.read_text()) if data_path.exists() else {}
+    data["epsilon"] = _EPSILON
+    data["std_m"] = std_m
+    data["std_n"] = std_n
 
     if variant == "both":
-        m, n = A.shape
-        if n > 1:
+        if std_n > 1:
             try:
                 basis = _preprocess_basis(A)
-                count, sparsity, cond = _cycle_count_mnes_from_basis(*basis)
-                data["cycle_count_mnes"] = count
-                data["sparsity_mnes"] = sparsity
-                data["cond_mnes"] = None if not math.isfinite(cond) else cond
-                count, sparsity, cond = _cycle_count_oss_from_basis(*basis)
-                data["cycle_count_oss"] = count
-                data["sparsity_oss"] = sparsity
-                data["cond_oss"] = None if not math.isfinite(cond) else cond
+                count, sparsity, cond, qlsa_cycles, tomography_factor = (
+                    _cycle_count_mnes_from_basis(*basis)
+                )
+                _write_variant_cycle_data(
+                    data,
+                    variant="mnes",
+                    cycle_count=count,
+                    sparsity=sparsity,
+                    cond=cond,
+                    qlsa_cycles=qlsa_cycles,
+                    tomography_factor=tomography_factor,
+                )
+                count, sparsity, cond, qlsa_cycles, tomography_factor = (
+                    _cycle_count_oss_from_basis(*basis)
+                )
+                _write_variant_cycle_data(
+                    data,
+                    variant="oss",
+                    cycle_count=count,
+                    sparsity=sparsity,
+                    cond=cond,
+                    qlsa_cycles=qlsa_cycles,
+                    tomography_factor=tomography_factor,
+                )
             except RuntimeError:
                 data["cycle_count_mnes"] = data["sparsity_mnes"] = data["cond_mnes"] = None
                 data["cycle_count_oss"] = data["sparsity_oss"] = data["cond_oss"] = None
+                _clear_cycle_split_fields(data, "mnes")
+                _clear_cycle_split_fields(data, "oss")
         else:
-            count, sparsity, cond = _cycle_count_mnes(A)
-            data["cycle_count_mnes"] = count
-            data["sparsity_mnes"] = sparsity
-            data["cond_mnes"] = None if not math.isfinite(cond) else cond
-            count, sparsity, cond = _cycle_count_oss(A)
-            data["cycle_count_oss"] = count
-            data["sparsity_oss"] = sparsity
-            data["cond_oss"] = None if not math.isfinite(cond) else cond
+            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_mnes(A)
+            _write_variant_cycle_data(
+                data,
+                variant="mnes",
+                cycle_count=count,
+                sparsity=sparsity,
+                cond=cond,
+                qlsa_cycles=qlsa_cycles,
+                tomography_factor=tomography_factor,
+            )
+            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_oss(A)
+            _write_variant_cycle_data(
+                data,
+                variant="oss",
+                cycle_count=count,
+                sparsity=sparsity,
+                cond=cond,
+                qlsa_cycles=qlsa_cycles,
+                tomography_factor=tomography_factor,
+            )
     elif variant == "mnes":
         try:
-            count, sparsity, cond = _cycle_count_mnes(A)
-            data["cycle_count_mnes"] = count
-            data["sparsity_mnes"] = sparsity
-            data["cond_mnes"] = None if not math.isfinite(cond) else cond
+            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_mnes(A)
+            _write_variant_cycle_data(
+                data,
+                variant="mnes",
+                cycle_count=count,
+                sparsity=sparsity,
+                cond=cond,
+                qlsa_cycles=qlsa_cycles,
+                tomography_factor=tomography_factor,
+            )
         except RuntimeError:
             data["cycle_count_mnes"] = data["sparsity_mnes"] = data["cond_mnes"] = None
+            _clear_cycle_split_fields(data, "mnes")
     else:
         try:
-            count, sparsity, cond = _cycle_count_oss(A)
-            data["cycle_count_oss"] = count
-            data["sparsity_oss"] = sparsity
-            data["cond_oss"] = None if not math.isfinite(cond) else cond
+            count, sparsity, cond, qlsa_cycles, tomography_factor = _cycle_count_oss(A)
+            _write_variant_cycle_data(
+                data,
+                variant="oss",
+                cycle_count=count,
+                sparsity=sparsity,
+                cond=cond,
+                qlsa_cycles=qlsa_cycles,
+                tomography_factor=tomography_factor,
+            )
         except RuntimeError:
             data["cycle_count_oss"] = data["sparsity_oss"] = data["cond_oss"] = None
+            _clear_cycle_split_fields(data, "oss")
 
     data_path.write_text(json.dumps(data, indent=None))
 
