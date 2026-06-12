@@ -1,0 +1,18 @@
+collection_time=2026-06-11T23:43:29-04:00
+hostname=dantzig.ecn.purdue.edu
+working_directory=/local/scratch/a/sgusev/repos/qipm
+python=Python 3.12.13
+git_commit=f4b1ec0e651ff814d6498163156c882210b07bb5
+
+Git status:
+ M cache_dir/gaslib/GasLib-11-v1-20211130_scn0_oa10/GasLib-11-v1-20211130_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-134-v2-20211129_scn0_oa10/GasLib-134-v2-20211129_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-135-v1-20211130_scn0_oa10/GasLib-135-v1-20211130_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-24-v1-20211130_scn0_oa10/GasLib-24-v1-20211130_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-2607-v1-20240708_scn0_oa10/GasLib-2607-v1-20240708_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-39-v1-20231119_scn0_oa10/GasLib-39-v1-20231119_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-40-v1-20211130_scn0_oa10/GasLib-40-v1-20211130_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-4197-v1-20220119_scn0_oa10/GasLib-4197-v1-20220119_scn0_oa10.data
+ M cache_dir/gaslib/GasLib-582-v2-20211129_scn0_oa10/GasLib-582-v2-20211129_scn0_oa10.data
+?? output.txt
+?? results/

@@ -1,0 +1,1 @@
+{"runtime_glpk": 3.019117, "runtime_highs_mps": 1.1046589971520007, "runtime_highs_std": 1.2527206600643694, "epsilon": 0.1, "std_m": 23003, "std_n": 37563, "cycle_count_mnes": null, "sparsity_mnes": null, "cond_mnes": null, "cycle_count_oss": null, "sparsity_oss": null, "cond_oss": null}
