@@ -1,0 +1,10 @@
+instance_class,instances,data_files,mnes_keys_present,mnes_success,oss_keys_present,oss_success,highs_mps_success,highs_std_success,invalid_data_files
+clique,627,627,585,585,585,585,627,627,0
+gaslib,9,9,8,6,8,6,9,9,0
+independent_set,627,627,564,564,564,564,627,627,0
+max_flow,588,588,334,334,334,334,560,560,0
+miplib,87,87,79,78,79,78,86,84,0
+misc,242,242,240,233,240,233,239,239,0
+netlib,109,109,108,104,108,104,108,108,0
+stochlp,120,120,119,119,119,119,120,120,0
+vertex_cover,627,627,564,564,564,564,627,627,0

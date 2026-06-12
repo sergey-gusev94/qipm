@@ -1,1 +1,1 @@
-{"runtime_highs_mps": 0.2585363988764584, "runtime_highs_std": 1.5965570230036974, "epsilon": 0.1, "std_m": 59644, "std_n": 65685, "cycle_count_mnes": null, "sparsity_mnes": null, "cond_mnes": null, "cycle_count_oss": null, "sparsity_oss": null, "cond_oss": null}
+{"runtime_highs_mps": 0.26003482891246676, "runtime_highs_std": 1.598546446999535, "epsilon": 0.1, "std_m": 59644, "std_n": 65685, "cycle_count_mnes": null, "sparsity_mnes": null, "cond_mnes": null, "cycle_count_oss": null, "sparsity_oss": null, "cond_oss": null}
