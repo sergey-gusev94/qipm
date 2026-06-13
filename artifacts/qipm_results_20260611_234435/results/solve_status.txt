@@ -1,9 +1,0 @@
-clique:  mps: 627/627  std: 627/627
-gaslib:  mps: 9/9  std: 9/9
-independent_set:  mps: 627/627  std: 627/627
-max_flow:  mps: 560/588  std: 560/588
-miplib:  mps: 86/87  std: 84/87
-misc:  mps: 239/242  std: 239/242
-netlib:  mps: 108/109  std: 108/109
-stochlp:  mps: 120/120  std: 120/120
-vertex_cover:  mps: 627/627  std: 627/627

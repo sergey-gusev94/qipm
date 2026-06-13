@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-DEFAULT_CACHE_DIR = Path("artifacts/qipm_results_20260611_234435/cache_dir")
+DEFAULT_CACHE_DIR = Path("data/qipm_benchmark_cache")
 
 METRICS = (
     "qlsa_time_800ps_over_highs_std_mnes",

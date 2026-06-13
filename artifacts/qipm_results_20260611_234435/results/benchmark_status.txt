@@ -1,9 +1,0 @@
-clique:  mnes: 585/627  oss: 585/627
-gaslib:  mnes: 8/9  oss: 8/9
-independent_set:  mnes: 564/627  oss: 564/627
-max_flow:  mnes: 334/588  oss: 334/588
-miplib:  mnes: 79/87  oss: 79/87
-misc:  mnes: 240/242  oss: 240/242
-netlib:  mnes: 108/109  oss: 108/109
-stochlp:  mnes: 119/120  oss: 119/120
-vertex_cover:  mnes: 564/627  oss: 564/627
